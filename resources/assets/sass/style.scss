@@ -1,0 +1,255 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'variables';
+@import 'iconos';
+@import 'fonts';
+@import 'comun';
+@import url('/assets/plugins/slick/slick');
+@import url('/assets/plugins/slick/slick-theme');
+
+body{
+	font-family: $shree;
+}
+#header {
+	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+	#top{
+		background-color: $blanco;
+		padding: 20px 0;
+		.container{
+			position: relative;
+		}
+		.section_menu_redes{
+			width: inherit;
+			margin-left: 80px;
+		}
+		.list_redes_top{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li{
+				display: inline-block;
+				margin-right: 3px;
+				a{
+					color: $gris;
+					i{
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+		.section_logo{
+			padding-top: 10px;
+		}
+		.logo{
+			display: block;
+			i{
+				font-size: 3em;
+			}
+		}
+		.section_menu_top{
+			position: absolute;
+			right: 0;
+			width: inherit;
+		}
+		.lista_menu_top{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li{
+				display: inline-block;
+				margin-left: 3px;
+				a{
+					color: $gris;
+					i{
+						font-size: 1.3em;
+					}
+				}
+			}
+		}
+	}
+
+	#menu_main{
+		.navbar{
+			margin-bottom: 0;
+			padding: 0
+		}
+		.navbar-toggler{
+			position: absolute;
+			top: -115px;
+			left: 0;
+			border: none;
+			padding: 0;
+		}
+		.collapse{
+			.navbar-nav {
+				li{
+					a{
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+
+#sliderHome{
+	img{
+		width: 100%;
+	}
+}
+
+// Novedades
+#sectionNovedades{
+	padding-top: 2em; 
+	.menu_tab{
+		border: none;
+		.nav-item{
+			.nav-link{
+				border: none;
+				padding: 10px 8px 0px;
+				font-size: 0.9em;
+				color: $gris;
+			}
+			.active{
+				border-bottom: 1px solid $gris;
+			}
+		}
+	}
+
+	#myTabContent{
+		margin-top: 1em;
+		background-color: $grisLight;
+		box-shadow: inset 0px 11px 8px -10px rgba(0,0,0,.1), inset 0px -11px 8px -10px rgba(0,0,0,.1);
+		padding-top: 1em;
+		padding-bottom: 1em; 
+	}
+}
+
+// Colecciones.
+#colecciones{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	.row{
+		margin: 0;
+	}
+	.item_col_col{
+		padding: 0;
+		.item_cole{
+			a{
+				display: block;
+				color: $blanco;
+				.item_img{
+					// position: relative;
+					img{
+						width: 100%;
+					}
+					.figcaption{
+						position: absolute;
+						display: table;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;						
+						.cont_figcaption{
+							display: table-cell;
+							vertical-align: middle;
+							width: 100%;
+							height: 100%;
+							padding: 10px;
+							text-transform: uppercase;
+							p{
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				&:hover{
+					.item_img{
+						.figcaption{
+							.cont_figcaption{
+								background-color: rgba(0,0,0,.4);
+							}							
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Frase home
+#fraseHome{
+	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/assets/images/bg-frase.jpg');
+	background-size: cover;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	color: $blanco;
+	font-family: $baskvill;
+}
+
+// Atributos Home.
+#attr{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	.col-sm-4{
+		margin-bottom: 2em;
+		i{
+			font-size: 3em;
+			margin-bottom: 15px;
+			display: block;
+		}
+	}	
+}
+
+// Footer
+#footer{
+	background-color: $marron;
+	padding-top: 2em; 
+	padding-bottom: 1em;
+	color: $blanco;
+	.col_footer{
+		margin-bottom: 2em;
+		h3{
+			font-size: 1.1em;
+		}
+		.logo_footer{
+			display: block;
+			i{				
+				font-size: 2.5em;
+				&:before{
+					color: $blanco;
+				}
+			}
+		}
+		.list_nav_footer{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li{
+				a{
+					color: $blanco;
+					font-size: 0.85em;
+				}
+			}
+		}
+	}
+	.subscripcion_footer{
+		h3{
+			text-transform: uppercase;
+		}
+		.btn-dark{
+			background-color: $negro;
+			color: $blanco;
+			border-color: $negro;
+		}
+	}
+	.copy_footer{
+		margin-top: 2em;
+		font-size: 0.85em;
+	}
+}
+
+// Responsive
+@import 'rwd/640d';
+@import 'rwd/980d';

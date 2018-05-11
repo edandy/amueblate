@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'BASKVILL';
+    src: url('/assets/fonts/BASKVILL.eot');
+    src: url('/assets/fonts/BASKVILL.eot') format('embedded-opentype'),
+         url('/assets/fonts/BASKVILL.woff2') format('woff2'),
+         url('/assets/fonts/BASKVILL.woff') format('woff'),
+         url('/assets/fonts/BASKVILL.ttf') format('truetype'),
+         url('/assets/fonts/BASKVILL.svg#BASKVILL') format('svg');
+}
+
+@font-face {
+    font-family: 'ShreeDev0714';
+    src: url('/assets/fonts/ShreeDev0714.eot');
+    src: url('/assets/fonts/ShreeDev0714.eot') format('embedded-opentype'),
+         url('/assets/fonts/ShreeDev0714.woff2') format('woff2'),
+         url('/assets/fonts/ShreeDev0714.woff') format('woff'),
+         url('/assets/fonts/ShreeDev0714.ttf') format('truetype'),
+         url('/assets/fonts/ShreeDev0714.svg#ShreeDev0714') format('svg');
+}
+
+$baskvill: 	'BASKVILL';
+$shree: 	'ShreeDev0714';

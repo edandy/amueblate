@@ -1,0 +1,74 @@
+@media screen and(min-width: 980px) {
+	#header {
+		position: relative;
+		z-index: 20;
+		#top{			
+			.section_logo{
+				margin-top: 0;
+				padding-top: 0;
+			}			
+		}
+
+		#menu_main{
+			background-color: rgba(0,0,0,.5);
+			.collapse{
+				.navbar-nav {
+					display: block;
+					width: 100%;
+					li{
+						float: left;
+						width: calc(100%/4);
+						text-align: center;
+						a{
+							color: $blanco;
+							padding-top: 15px;
+							padding-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	// Slider
+	#sliderHome{
+		margin-top: -54px;
+	}
+	// Novedades
+	#sectionNovedades{
+		padding-top: 3em;
+		.menu_tab{
+			margin-top: 20px;
+			.nav-item{
+				.nav-link{
+					font-size: 1.2em;
+				}
+			}
+		}
+	}
+
+	// Colecciones
+	#colecciones{
+		padding-top: 3.5em;
+		padding-bottom: 3.5em;
+	}
+	// Frase home
+	#fraseHome{
+		padding-top: 3.5em;
+		padding-bottom: 3.5em;
+		p{
+			font-size: 1.7em;
+		}
+	}
+	// Atributos Home.
+	#attr{
+		padding-top: 3em;
+		padding-bottom: 3em;
+		.col-sm-4{
+			i{
+				font-size: 4em;
+			}
+		}	
+	}
+	// FIN
+}

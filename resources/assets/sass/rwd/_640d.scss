@@ -1,0 +1,98 @@
+@media screen and(min-width: 640px) {
+	#header {
+		#top{
+			padding: 15px 0;
+			.section_menu_redes{
+				margin-left: 0px;
+			}			
+			.section_logo{
+				margin-top: 25px;
+			}			
+		}
+
+		#menu_main{
+			.navbar-toggler{
+				top: -55px;
+			}
+		}
+	}
+
+	// Novedades
+	#sectionNovedades{
+		padding-top: 2.5em; 
+		.menu_tab{
+			text-align: center;
+			display: block;
+			.nav-item{
+				display: inline-block;
+				float: none;
+				margin-left: 20px;
+				margin-right: 20px;
+				.nav-link{
+					font-size: 1em;
+				}
+			}
+		}
+	}
+	// Frase home
+	#fraseHome{
+		padding-top: 2.5em;
+		padding-bottom: 2.5em;
+		p{
+			font-size: 1.2em;
+		}
+	}
+
+	// Atributos Home.
+	#attr{
+		padding-top: 3em;
+		.col-sm-4{
+			margin-bottom: 0.6em;
+		}	
+	}
+	
+	// Footer
+	#footer{
+		padding-top: 2.5em; 
+		.row{
+			.col-sm-6{
+				width: 50%;
+			}
+		}
+		.col_footer{			
+			h3{
+				font-size: 1.15em;
+			}
+			.logo_footer{
+				padding-top: 1em;
+				padding-bottom: 1em;
+			}
+			.list_nav_footer{
+				list-style-type: none;
+				padding: 0;
+				margin: 0;
+				li{
+					a{
+						color: $blanco;
+						font-size: 0.85em;
+					}
+				}
+			}
+		}
+		.subscripcion_footer{
+			h3{
+				text-transform: uppercase;
+			}
+			.btn-dark{
+				background-color: $negro;
+				color: $blanco;
+				border-color: $negro;
+			}
+		}
+		.copy_footer{
+			margin-top: 2em;
+			font-size: 0.85em;
+		}
+	}
+	// FIN
+}
