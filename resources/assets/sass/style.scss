@@ -8,6 +8,7 @@
 
 body{
 	font-family: $shree;
+	color: $gris;
 }
 #header {
 	box-shadow: 0px 0px 10px rgba(0,0,0,.1);
@@ -97,6 +98,77 @@ body{
 	}
 }
 
+// CAROUSEL
+.carousel_home{
+	// padding-left: 20px;
+	// padding-right: 20px;
+	.slick-prev{
+		left: -10;
+		z-index: 20;
+		&:before{
+			font-family: 'icomoon';
+			content: "\e90a";
+			color: $negro;
+		}
+	}
+	.slick-next{
+		right: -10;
+		&:before{
+			font-family: 'icomoon';
+			content: "\e903";
+			color: $negro;
+		}
+	}
+	.slick-list{
+		.slick-track{
+			.slick-slide{
+				padding-left: 5px;
+				padding-right: 5px;
+				figure{
+					margin: 0;				
+					position: relative;					
+					figcaption{
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 0;
+						background-color: rgba(0,0,0,.5);
+						padding: 15px;
+						color: $blanco;
+						text-align: center;
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
+						height: 100%;
+						width: 100%;	
+						flex-direction: row;
+						opacity: 1;
+						transition: all 500ms linear;
+						.content{
+							align-self: center;
+							text-align: center;
+							width: 100%;
+						}
+					}
+				}
+				img{
+					//width: 100%;
+					max-width: 100%;
+					height: auto;
+					display: block;
+				}
+				&:hover{
+					figure{
+						figcaption{
+							opacity: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
 // Novedades
 #sectionNovedades{
 	padding-top: 2em; 
@@ -121,6 +193,11 @@ body{
 		box-shadow: inset 0px 11px 8px -10px rgba(0,0,0,.1), inset 0px -11px 8px -10px rgba(0,0,0,.1);
 		padding-top: 1em;
 		padding-bottom: 1em; 
+		padding-left: 1em; 
+		padding-right: 1em;
+		#profile{
+			display: none;
+		}
 	}
 }
 
@@ -181,11 +258,16 @@ body{
 // Frase home
 #fraseHome{
 	background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/assets/images/bg-frase.jpg');
-	background-size: cover;
-	padding-top: 2em;
-	padding-bottom: 2em;
+	padding-top: 3em;
+	padding-bottom: 3em;
 	color: $blanco;
 	font-family: $baskvill;
+
+	background-size: 100%;
+    position: relative;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: round;
 }
 
 // Atributos Home.
@@ -253,3 +335,6 @@ body{
 // Responsive
 @import 'rwd/640d';
 @import 'rwd/980d';
+@import 'pages/about';
+@import 'pages/novedades';
+@import 'pages/colecciones'

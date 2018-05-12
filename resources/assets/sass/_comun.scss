@@ -1,5 +1,15 @@
-.title_section{
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+.title_section_upp{
 	text-transform: uppercase;
+	text-align: center;
+	font-weight: normal;
+}
+
+.title_section{
 	text-align: center;
 	font-weight: normal;
 }
@@ -11,5 +21,41 @@
 .input-group{
 	.form-control{
 		border-radius: 0;
+	}
+}
+
+.title_page{
+	text-align: center;
+	font-family: $baskvill;
+	margin-top: 0.7em;
+	margin-bottom: 1em;
+}
+
+.img_full_width{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.btn_more{
+	color: $negro;
+	i{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+
+.lista_paginacion{
+	list-style-type: none;
+	padding: 0;
+	margin: 1em 0;
+	text-align: center;
+	li{
+		display: inline-block;
+		span, a{
+			display: block;
+			padding: 5px;
+			color: $negro;
+		}
 	}
 }
